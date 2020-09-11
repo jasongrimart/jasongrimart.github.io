@@ -1,0 +1,983 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+
+.hamburger {
+    width: 50px;
+    float: right;
+    padding: 15px;
+}
+
+.hamburger:hover, .close:hover {
+    cursor: pointer;
+}
+  
+.topbar {
+    height: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.topbar:after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+    left: -20px;
+    border-bottom: 1px solid #fff;
+}
+  
+.logo h1 {
+    position: absolute;
+    left: 15px;
+    line-height: 50px;
+    padding: 18px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+}
+  
+.menu {
+    float: right;
+    position: relative;
+    top: 30px;
+    right: 15px;
+}
+  
+.menu-link {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+  
+.menu-link:hover {
+    position: relative;
+    color: #E8BF52;
+    font-size: 20px;
+}
+
+#chk {
+    visibility: hidden;
+    position: relative;
+}
+  
+.show, .close {
+    display: none;
+}
+
+.back-button {
+    border: 1px solid white;
+    margin-left: 25px;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #223351;
+}
+
+/*---STICKY BOX ON LEFT STYLING---*/
+
+.boxleft{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 60%;
+    float: left;
+    background-color: #775C78;
+    transition: all 1s ease-in-out;
+    z-index: 100;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+.boxleft a {
+    position: absolute;
+    transform: rotate(45deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.boxleft:hover {
+    background-color: #4C394D;
+}
+
+.boxleft:hover a {
+    transform: rotate(-45deg);
+}
+
+
+/*------FIRST SECTION STYLE--------*/
+
+.panel1 {
+    background-image: url(space/images/image2.jpg);
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100vw;
+    position: relative;
+}
+
+.final-frontier {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    height: 400px;
+    top: 37%;
+    left: 10%;
+    line-height: 75px;
+}
+
+.final-frontier h1 {
+    font-size: 100px;
+    margin-top: -50px;
+}
+
+.final-frontier h3 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.final-frontier img {
+    width: 50px;
+}
+
+
+.panel1icons i {
+    color: white;
+    padding: 10px;
+    scale: 1;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.panel1icons i:hover {
+    color: #e8bf52;
+    transform: scale(1.4);
+}
+
+.panel1icons {
+    position: absolute;
+    right: 50px;
+    top: 30vh;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verticalbar {
+    background-color: white;
+    position: absolute;
+    width: 2px;
+    height: 200px;
+    top: 0;
+    right: 1px;
+}
+
+.panel1icons-icons {
+    position: absolute;
+    top: 215px;
+}
+
+.shuttle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 50px;
+}
+
+.fa-space-shuttle {
+    color: white;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+
+/*------ABOUT SECTION STYLING-------*/
+
+.panel2 {
+    margin: 0 auto;
+    background-color: black;
+    width: 100vw;
+    padding-top: 0px;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.panel2 h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 150px;
+}
+
+.panel2 img {
+    width: 500px;
+}
+
+.two-squares {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.square1, .square2 {
+    padding-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+    width: 30vw;
+    height: 400px;
+    text-align: center;
+    border: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 25px;
+}
+
+.square1, .square2 {
+    background: black;
+}
+
+
+.square2 a {
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.square2 a:hover {
+    background-color: #E8BF52;
+    color:#223351;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.square2 p {
+    padding-bottom: 50px;
+}
+
+.satellite, .galaxy{
+    fill: #E8BF52;
+    width: 200px;
+    transition: all 0.5s ease-in-out;
+}
+
+.satellite:hover, .galaxy:hover{
+    fill: white;
+}
+
+/*------FAQ SECTION -------*/
+
+.faq-section {
+    background-color: #000;
+    background-image: url(space/images/image4.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 100vw;
+    height: 120vh;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.faq-section h2 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: 50px;
+}
+
+.faq-section img {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 120px;
+}
+
+.faq-arrow {
+    width: 30px;
+    fill: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.accordion {
+    width: 90vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.accordion a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.accordion-title {
+    display: flex;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 30px;
+    color: white;
+}
+
+.accordion-title h3 {
+    padding-left: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.answer {
+    position: relative;
+    text-align: center;
+    top: 0px;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    width: 70vw;
+    font-size: 15px;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+    transition: all 0.6s ease-in-out;
+    padding-bottom: 50px;
+}
+
+.accordion a:focus + .answer {
+    position: relative;
+    top: 30px;
+    height: 125px;
+    opacity: 1;
+}
+
+.accordion a:focus .faq-arrow {
+    transform: rotate(90deg);
+    position: relative;
+    fill: #E8BF52;
+}
+
+.accordion a:focus .accordion-title h3 {
+    color: #E8BF52;
+}
+
+/*-----------------------QUOTE SECTION------------------------------*/
+
+.quote-section {
+    background-image: url(space/images/image5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% auto;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 600px;
+}
+
+.quote-inner {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+.quote-words {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    height: 200px;
+}
+.quote-words h2 {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: 35px;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+    transition: all 0.4s ease-in-out;
+}
+
+.quote-words h2:hover {
+    filter: blur(5px);
+}
+
+#top-border {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+#bottom-border {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.quote-button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 50vw;
+    top: 58%;
+}
+
+.quote-button a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 12px 20px 12px 20px;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+    background-color: #223351;
+}
+
+.quote-button a:hover {
+    color: #223351;
+    border-color: 2px solid #223351;
+    background-color: #E8BF52;
+}
+
+/*-------------Gallery Section-----------------*/
+
+.gallery-wrapper {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    position: relative;
+}
+
+.gallery-wrapper h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    color: white;
+}
+
+.gallery {
+    position: absolute;
+    top: 175px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly !important;
+}
+
+.gallery img {
+    max-width: 200px;
+    border: 1px solid #E8BF52;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.gallery img:hover {
+    filter: grayscale(75%);
+    transform: scale(1.2);
+}
+
+
+#constellation1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    margin-top: -100px;
+}
+
+#constellation2 {
+    position: absolute;
+    bottom: 0;
+    left: -125px;
+    transform: scale(0.8);
+    z-index: 100;
+    margin-top: 50px;
+}
+
+/*--------CONTACT FORM -------- */
+
+
+.contact-form-section {
+    width: 100vw;
+    height: 800px;
+    padding-top: 80px;
+    display: block;
+    background-image: url(space/images/image3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-form-section h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-auto-rows: 50px;
+    grid-gap: 25px;
+    justify-content: center;
+    width: 80vw;
+    position: relative;
+}
+
+.contact-form input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-form input::placeholder, textarea::placeholder {
+    color: white;
+}
+
+.contact-form input:focus, textarea:focus {
+    background-color: rgba(255,255,255,0.8);
+    outline: 1px solid white;
+    outline-offset: 5px;
+}
+
+#Name, #Phone, #subject, #Message {
+    position: relative;
+}
+
+#Name {
+    grid-column: 1;
+}
+
+#Phone {
+    grid-column: 2;
+}
+
+#Subject {
+    grid-column: 1 / -1;
+}
+
+#Message {
+    grid-column: 1 / -1;
+    grid-row: 3 / 6;
+}
+
+#submit-button {
+    grid-column: 1;
+    grid-row: 7;
+    width: 125px;
+    background-color: #E8BF52;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 800;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+#submit-button:hover {
+    color: white;
+    background-color: #223351;
+}
+
+/*-----------------FOOTER-----------------------*/
+
+.footer {
+    height: 350px;
+    background-color: black;
+    width: 100vw;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+}
+
+.footer::before {
+    content: "";
+    width: 85vw;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    position: relative;
+    left: 90px;
+    margin-top: 25px;
+}
+
+.footer-div-1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    grid-column: 2 / 4;
+    padding-top: 50px;
+}
+
+.footer-icon {
+    width: 150px;
+    fill: #E8BF52;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: -50px;
+}
+
+.footer-div-1 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+}
+
+.footer-div-1 h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.footer-section-2 {
+    grid-column: 9 / 11;
+    position: relative;
+}
+.footer-section-2 i {
+    color: white;
+    transition: all 0.75s ease-in-out;
+    padding: 10px;
+    position: relative;
+    top: 200px;
+}
+
+.footer-section-2 i:hover {
+    color: #E8BF52;
+    transform: scale(1.5);
+    transform-origin: center;
+}
+
+/*-----------------------RESPONSIVE STYLING------------------------------*/
+
+
+@media only screen and (max-width: 1000px) {
+
+
+
+
+.final-frontier h1 {
+    font-size: 80px;
+    margin-top: -60px;
+}
+
+.final-frontier h3 {
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.boxleft {
+    top: 75%;
+}
+
+.two-squares {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+.square1, .square2 {
+    position: relative;
+    width: 325px !important;
+    height: 325px;
+    padding: 50px;
+    margin-bottom: 75px;
+}
+
+.faq-section {
+    height: 135vh;
+}
+
+.faq-section img {
+    position: relative;
+    left: -30%;
+    width: 120px;
+    top: -80px;
+}
+
+.accordion a:focus + .answer {
+    height: 200px;
+}
+
+.answer {
+    top: 100px;
+    margin-bottom: 25px;
+}
+
+.gallery-wrapper {
+    height: 125vh;
+    width: 100vw;
+}
+
+.gallery {
+    flex-direction: column;
+    top: 150px;
+}
+.gallery img {
+    margin: 25px;
+    width: 300px;
+}
+
+#constellation2 {
+    transform: scale(0.5);  
+}
+
+#constellation1 {
+    transform: scale(0.75);
+    position: absolute;
+    right: 0%;
+    margin-right: -25px;
+}
+
+.footer::before {
+    content: "";
+    width: 80vw;
+}
+
+.footer {
+    height: 500px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-auto-rows: 100px;
+}
+
+.footer-div-1 {
+    grid-row: 1 / 4;
+}
+
+.footer-section-2 {
+    position: relative;
+    left: -10px;
+    grid-row: 3;
+    grid-column: 2 / 4;
+}
+
+.quote-words h2 {
+    font-size: 30px;
+}
+
+}
+
+
+@media only screen and (max-width: 750px) { 
+
+    .show, .close {
+        display: block;
+  }
+  
+  .topbar:after {
+      content: "";
+      display: block;
+      width: 105%;
+      margin: 0 auto;
+      position: relative;
+      top: 70px;
+      left: -20px;
+      border-bottom: 1px solid #fff;
+  }
+    
+  .menu {
+        position: fixed;
+        color: white;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(space/images/mobile-back.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom-center;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        transform: scale(2);
+        filter: blur(300px);
+        visibility: hidden;
+        transition: 0.25s ease-in-out;
+       
+  }
+    
+  .menu a {
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        font-size: 40px;
+        font-weight: 200;
+        transition: all 0.5s ease-in-out;
+        transition: 0.75s ease-in-out;
+        border-bottom: 0px;
+  }
+
+  .menu a:hover {
+    color: #E8BF52;
+    font-size: 40px;
+}
+    
+  .close {
+        position: absolute;
+        top: 575px;
+        left: 47vw;
+        font-family: futura;
+        font-size: 12px;
+  }
+  
+  .close h1 {
+      position: relative;
+      top: -150%;
+      bottom: 0;
+      border: 2px solid #fff;
+      width: 25px;
+      height: 25px;
+      padding-top: 3px;
+      border-radius: 50px;
+      text-shadow(5px 5px 10px rgba(0,0,0,0.9));
+  }
+    
+  .hamburger {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        padding: 15px;
+  }
+    
+  #chk:checked ~ .menu {
+      filter: blur(0);
+      transform: scale(1);
+      visibility: visible;
+  }
+  
+  .menu { 
+      padding-top: 50px;
+  }
+
+  .back-button {
+    text-align: center;
+    font-size: 30px !important;
+    border: none;
+    font-weight: 500;
+    background-color: transparent;
+}
+    .final-frontier h1 {
+        font-size: 60px;
+        margin-top: -70px;
+    }
+    
+    .final-frontier h3 {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    .faq-section {
+        padding-bottom: 100px;
+    }
+
+    #Name {
+        grid-column: 1 / -1;
+    }
+    
+    #Phone {
+        grid-column: 1 / -1;
+    }
+    
+    #Subject {
+        grid-column: 1 / -1;
+    }
+    
+    #Message {
+        grid-column: 1 / -1;
+        grid-row: 4 / 6;
+    }
+
+    #submit-button {
+        grid-row: 7;}
+
+    .footer::before {
+        content: "";
+        width: 60vw;
+    }
+
+    .quote-words h2 {
+        font-size: 23px;
+    }
+}
+
+  
