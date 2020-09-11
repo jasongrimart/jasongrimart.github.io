@@ -9,7 +9,10 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
 
@@ -138,6 +141,7 @@ html {
     margin-bottom: 0;
     width: 100vw;
     position: relative;
+    overflow: hidden;
 }
 
 .final-frontier {
@@ -180,7 +184,7 @@ html {
 
 .panel1icons {
     position: absolute;
-    right: 50px;
+    right: 30px;
     top: 30vh;
     height: 400px;
     display: flex;
@@ -245,30 +249,31 @@ html {
 }
 
 .panel2 img {
-    width: 500px;
+    width: 50vw;
 }
 
 .two-squares {
     position: relative;
     width: 100vw;
+    height: 60vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: black;
+    overflow: hidden;
 }
 
 .square1, .square2 {
-    padding-top: 120px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 25px;
     color: white;
     width: 30vw;
-    height: 400px;
+    height: 50vh;
     text-align: center;
     border: 1px solid white;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin: 25px;
+
 }
 
 .square1, .square2 {
@@ -291,7 +296,7 @@ html {
 .square2 a:hover {
     background-color: #E8BF52;
     color:#223351;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 800;
     padding: 20px;
     border-radius: 50px;
@@ -303,8 +308,9 @@ html {
 
 .satellite, .galaxy{
     fill: #E8BF52;
-    width: 200px;
+    width: 15vw;
     transition: all 0.5s ease-in-out;
+    padding-top: 25px;
 }
 
 .satellite:hover, .galaxy:hover{
@@ -442,6 +448,7 @@ html {
     font-size: 35px;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.8);
     transition: all 0.4s ease-in-out;
+    padding: 0 50px 0 50px;
 }
 
 .quote-words h2:hover {
@@ -470,6 +477,7 @@ html {
     position: absolute;
     width: 50vw;
     top: 58%;
+    margin-top: 25px;
 }
 
 .quote-button a {
@@ -749,18 +757,24 @@ html {
 .two-squares {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    height: 150vh;
+    flex-direction: column !important;
     background-color: black;
     justify-content: center;
     align-items: center;
 }
+
 .square1, .square2 {
     position: relative;
-    width: 325px !important;
-    height: 325px;
-    padding: 50px;
+    width: 50vw !important;
+    height: 50vh;
+    padding: 50px 50px 25px 50px;
+    margin: 10px;
     margin-bottom: 75px;
+}
+
+.satellite, .galaxy{
+    width: 25vw;
 }
 
 .faq-section {
@@ -806,6 +820,16 @@ html {
     position: absolute;
     right: 0%;
     margin-right: -25px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-auto-rows: 50px;
+    grid-gap: 25px;
+    justify-content: center;
+    width: 80vw;
+    position: relative;
 }
 
 .footer::before {
@@ -894,7 +918,7 @@ html {
     
   .close {
         position: absolute;
-        top: 575px;
+        top: 500px;
         left: 47vw;
         font-family: futura;
         font-size: 12px;

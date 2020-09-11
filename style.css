@@ -210,7 +210,7 @@
 .second-slide h2 {
     font-weight: 800;
     font-size: 40px;
-    padding-top: 25px;
+    padding-top: 75px;
 }
 
 .second-slide span {
@@ -333,7 +333,7 @@
 
 .middle {
   position: relative;
-  top: 50%;
+  top: 20%;
   margin: 0 auto;
 }
 
@@ -525,7 +525,7 @@
 }
 
 .footer-section img {
-    width: 250px;
+    width: 25vw;
 }
  
 /*----RESPNOSIVE STYLING-----*/
@@ -534,6 +534,14 @@
 
 @media only screen and (max-width: 1000px) {
 
+    .top-section-text {
+        display: flex;
+        flex-direction: column;
+        padding-top: 25vh;
+        padding-left: 100px;
+        width: 400px;
+    }
+    
     .second-slide img {
         position: absolute;
         top: 20px;
@@ -579,7 +587,7 @@
     }
 
     .third-left img {
-        width: 400px;
+        width: 350px;
     }
 }
 
@@ -601,13 +609,13 @@
     .top-section-text h1 {
         font-family: 'Montserrat', sans-serif !important;
         font-weight: 800;
-        font-size: 30px;
+        font-size: 25px;
     }
     
     .top-section-text p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .top-section-text {
@@ -616,8 +624,8 @@
     }
     
     #ipad-top {
-        width: 350px;
-        top: 18vh;
+        width: 300px;
+        top: 23vh;
         left: 0;
     }
 
@@ -641,6 +649,7 @@
 
     .middle {
         margin-left: 30px;
+        top: 0;
     }
 
     .front img {
@@ -654,8 +663,13 @@
         height: 900px;
         overflow: hidden;
         z-index: 0;
-        padding-bottom: 150px;
+        margin-bottom: 200px;
     }
+
+    .third-section p {
+        font-size: 13px;
+    }
+
     .third-right-head::after {
         content: " ";
         position: absolute;
@@ -670,10 +684,27 @@
         position: relative;
         z-index: 10;
         top: 100px;
-        left: 30px;
+        left: 10px;
         right: 50px;
         height: 400px;
         margin-bottom: -100px;
+    }
+
+    .skew1 {
+        background-color: white;
+        position: absolute;
+        top: -225px;
+        width: 100vw;
+        transform: skewY(2deg);
+        height: 50px;
+        z-index: 40;
+    }
+    
+    .flip-card-container {
+        padding-bottom: 125px;
+        padding-top: 0px;
+        position: relative;
+        z-index: 2;
     }
 
     .space-button {
@@ -687,6 +718,10 @@
     
     .space-button:hover {
         background-color: transparent;
+    }
+
+    .footer-section img {
+        width: 40vw;
     }
 
 }
