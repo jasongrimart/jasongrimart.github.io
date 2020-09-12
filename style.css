@@ -526,6 +526,7 @@
 
 .footer-section img {
     width: 25vw;
+    height: auto;
 }
  
 /*----RESPNOSIVE STYLING-----*/
