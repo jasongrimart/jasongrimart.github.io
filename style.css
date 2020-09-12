@@ -721,6 +721,11 @@
         background-color: transparent;
     }
 
+
+    .contact-form-wrapper {
+        background-size: 150vw;
+    }
+
     .footer-section img {
         width: 40vw;
         height: auto;
