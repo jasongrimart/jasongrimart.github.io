@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
   width: 100vw;
