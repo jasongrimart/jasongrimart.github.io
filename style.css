@@ -723,12 +723,11 @@
 
 
     .contact-form-wrapper {
-        background-size: 150vw;
+        background-size: contain;
     }
 
     .footer-section img {
-        width: 40vw;
-        height: auto;
+        height: 30vh;
     }
 
 }
