@@ -146,7 +146,7 @@ html {
 
 .final-frontier {
     position: absolute;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     color: #fff;
     height: 400px;
     top: 37%;
