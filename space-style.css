@@ -966,7 +966,7 @@ html {
     background-color: transparent;
 }
     .final-frontier h1 {
-        font-size: 60px;
+        font-size: 50px;
         margin-top: -70px;
     }
     
@@ -1007,6 +1007,68 @@ html {
     .quote-words h2 {
         font-size: 23px;
     }
+
+    /*--------ACCORDION RESPONSINVE --------*/
+
+    .faq-section {
+        height: 200vh;
+    }
+    
+    
+    .faq-arrow {
+        width: 20px;
+        fill: white;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .accordion {
+        width: 80vw;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-direction: column;
+    }
+    
+    
+    .accordion-title {
+        display: flex;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .accordion-title h3 {
+        padding-left: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .answer {
+        position: relative;
+        text-align: center;
+        top: 0px;
+        height: 0px;
+        opacity: 0;
+        overflow: hidden;
+        width: 70vw;
+        font-size: 14px;
+        text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+        transition: all 0.6s ease-in-out;
+        padding-bottom: 50px;
+    }
+    
+    .accordion a:focus + .answer {
+        position: relative;
+        top: 30px;
+        height: 200px;
+        opacity: 1;
+    }
+    
 }
 
   
