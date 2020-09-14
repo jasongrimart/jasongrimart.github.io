@@ -979,10 +979,6 @@ html {
         padding-top: 10px;
     }
 
-    .faq-section {
-        padding-bottom: 100px;
-    }
-
     #Name {
         grid-column: 1 / -1;
     }
@@ -1014,6 +1010,16 @@ html {
 
     .faq-section {
         display: none;
+    }
+
+    .gallery-wrapper {
+        height: 140vh;
+        width: 100vw;
+    }
+
+    .quote-section {
+        background-image: none;
+        background-color: #34243b;
     }
     
 
