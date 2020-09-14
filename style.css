@@ -526,6 +526,7 @@
 
 .footer-section img {
     width: 200px;
+    display: block;
 }
  
 /*----RESPNOSIVE STYLING-----*/
@@ -722,14 +723,21 @@
 
 
     .contact-form-wrapper {
-        padding-top: 125px;
-        padding-bottom: 125px;
-        background-image: url(images/keyboard.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        width: 100vw;
-        font-family: 'Montserrat', sans-serif !important;
+        background-image: none;
+        background-color: var(--blue);
+    }
+
+    .contact-section-vert-bar {
+        background-color: var(--yellow);
+    }
+
+    .footer-section img {
+        display: none;
+    }
+
+    .footer-section h2 {
+        padding-right: 50px;
+        padding-left: 50px;
     }
 
 }
