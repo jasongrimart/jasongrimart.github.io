@@ -630,6 +630,28 @@
         left: 0;
     }
 
+    .top-section-panel img {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: -25px;
+    }
+    
+    .top-section-panel-inner {
+        background-color: #d8ae3a;
+        position: absolute;
+        left: 125px;
+        width: 340px;
+        height: 100%;
+        color: white;
+        padding: 30px !important;
+        box-shadow: 5px 0px 25px rgba(0,0,0,0.2);
+    }
+
+    .top-section-panel span {
+        display: none;
+    }
+
     .first-slide img {
         padding-top: 25px;
         width: 200px;
