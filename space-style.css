@@ -961,10 +961,10 @@ html {
       padding-top: 50px;
   }
 
-  .faq-anchor {
+  .faq-anchor-main {
       display: none;
   }
-  
+
   .back-button {
     text-align: center;
     font-size: 30px !important;
