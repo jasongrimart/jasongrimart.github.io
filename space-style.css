@@ -898,11 +898,9 @@ html {
         background-position: bottom-center;
         z-index: 10;
         top: 0;
-        right: 0;
-        transform: scale(2);
-        filter: blur(300px);
-        visibility: hidden;
-        transition: 0.25s ease-in-out;
+        left: 150%;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
        
   }
     
@@ -952,16 +950,15 @@ html {
   }
     
   #chk:checked ~ .menu {
-      filter: blur(0);
-      transform: scale(1);
-      visibility: visible;
+      opacity: 1;
+      left: 0;
   }
   
   .menu { 
       padding-top: 50px;
   }
 
-  .faq-anchor-main {
+  #faq-anchor-main {
       display: none;
   }
 
